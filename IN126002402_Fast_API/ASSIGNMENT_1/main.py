@@ -12,9 +12,11 @@ products = [
     {"id": 7, "name": "Webcam", "price": 1899, "category": "Electronics", "in_stock": False}
 ]
 
+
 @app.get("/")
 def home():
     return {"message": "FastAPI is working!"}
+
 
 @app.get("/products")
 def get_products():
@@ -22,6 +24,8 @@ def get_products():
         "products": products,
         "total": len(products)
     }
+
+
 @app.get("/products/category/{category_name}")
 def get_by_category(category_name: str):
     result = [p for p in products if p["category"] == category_name]
@@ -33,4 +37,29 @@ def get_by_category(category_name: str):
         "category": category_name,
         "products": result,
         "total": len(result)
+    }
+
+
+@app.get("/products/instock")
+def get_instock():
+    available = [p for p in products if p["in_stock"] == True]
+
+    return {
+        "in_stock_products": available,
+        "count": len(available)
+    }
+
+
+@app.get("/store/summary")
+def store_summary():
+    in_stock_count = len([p for p in products if p["in_stock"]])
+    out_stock_count = len(products) - in_stock_count
+    categories = list(set([p["category"] for p in products]))
+
+    return {
+        "store_name": "My E-commerce Store",
+        "total_products": len(products),
+        "in_stock": in_stock_count,
+        "out_of_stock": out_stock_count,
+        "categories": categories
     }
