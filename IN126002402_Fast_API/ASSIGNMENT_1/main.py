@@ -63,3 +63,28 @@ def store_summary():
         "out_of_stock": out_stock_count,
         "categories": categories
     }
+
+
+@app.get("/products/search/{keyword}")
+def search_products(keyword: str):
+    results = [p for p in products if keyword.lower() in p["name"].lower()]
+
+    if not results:
+        return {"message": "No products matched your search"}
+
+    return {
+        "keyword": keyword,
+        "results": results,
+        "total_matches": len(results)
+    }
+
+
+@app.get("/products/deals")
+def get_deals():
+    cheapest = min(products, key=lambda p: p["price"])
+    expensive = max(products, key=lambda p: p["price"])
+
+    return {
+        "best_deal": cheapest,
+        "premium_pick": expensive
+    }
