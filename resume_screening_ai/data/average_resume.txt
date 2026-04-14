@@ -1,0 +1,19 @@
+Name: Neha Rao
+
+Summary:
+Computer Science student interested in analytics and machine learning.
+
+Experience:
+- Analytics Intern at RetailPulse (3 months)
+  Cleaned sales data and created dashboards.
+- Academic project: House price prediction
+
+Skills:
+Python, Basic SQL, Data Analysis, Machine Learning basics
+
+Tools:
+Pandas, Matplotlib, Jupyter Notebook, Excel
+
+Education:
+B.Sc Data Science, 2026
+

@@ -1,0 +1,30 @@
+Position: Data Scientist Intern
+
+We are looking for a Data Scientist Intern to support analytics and ML use cases.
+
+Required Skills:
+- Python
+- SQL
+- Statistics
+- Machine Learning fundamentals
+- Data cleaning and feature engineering
+- Data visualization
+
+Preferred Tools:
+- Pandas
+- NumPy
+- scikit-learn
+- Matplotlib or Seaborn
+- Jupyter Notebook
+- Git
+
+Responsibilities:
+- Build and evaluate ML models
+- Analyze structured data and present insights
+- Work with product and engineering teams
+- Communicate findings with clear visualizations
+
+Experience:
+- 0-2 years (internships/projects acceptable)
+- Exposure to end-to-end ML workflow is a plus
+

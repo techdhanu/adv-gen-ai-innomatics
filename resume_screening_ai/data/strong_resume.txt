@@ -1,0 +1,21 @@
+Name: Aarav Mehta
+
+Summary:
+Final-year B.Tech student in Computer Science with strong Data Science project experience.
+
+Experience:
+- Data Science Intern at Insight Labs (6 months)
+  Built churn prediction model using Python, scikit-learn, Pandas, and SQL.
+  Improved model AUC from 0.78 to 0.86 through feature engineering and hyperparameter tuning.
+- ML Project Assistant at University Lab (8 months)
+  Built NLP classification and sales forecasting prototypes in Jupyter.
+
+Skills:
+Python, SQL, Statistics, Machine Learning, Feature Engineering, Data Cleaning, Data Visualization
+
+Tools:
+Pandas, NumPy, scikit-learn, Matplotlib, Seaborn, Jupyter Notebook, Git
+
+Education:
+B.Tech Computer Science, 2026
+
